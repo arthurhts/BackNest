@@ -13,6 +13,6 @@ export class Category {
   @Column()
   name: string;
 
-  @CreateDateColumn()
-  create_at: Date;
+  @CreateDateColumn({ type: 'timestamp' })
+  created_at: Date;
 }
